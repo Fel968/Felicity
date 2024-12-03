@@ -33,7 +33,7 @@ const About = () => {
                   ))}
                 </div>
                 <br />
-                <a href="./src/assets/Code_a_program.pdf" download>
+                <a href="./src/assets/Felicity Semetey-RESUME.pdf" download>
                   <button className="btn-primary ml-30">Download CV</button>
                 </a>
               </div>

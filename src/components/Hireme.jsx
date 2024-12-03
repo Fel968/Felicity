@@ -1,35 +1,65 @@
 import React from "react";
-import hireMe from "../assets/images/hireMe.png";
-const Hireme = () => {
+
+const experiences = [
+  {
+    role: "Web Developer (Training)",
+    organization: "MEST",
+    period: "September 2024 – November 2024",
+    details: [
+      "Acquired hands-on experience with modern web development technologies, including HTML, CSS, JavaScript, React, and Node.js.",
+      "Designed and implemented projects demonstrating core concepts in frontend development, backend development, and RESTful APIs.",
+      "Collaborated with team members to build responsive and functional web applications.",
+      "Strengthened skills in creating responsive web designs and implementing user-focused features.",
+      "Completed a capstone project showcasing understanding of the full stack development process.",
+    ],
+  },
+  {
+    role: "Systems Administrator (Internship)",
+    organization: "Molaprise Technology Consult",
+    period: "November 2023 – August 2024",
+    details: [
+      "Implemented industry-standard security policies to enhance compliance and risk management.",
+      "Streamlined device and user management using Microsoft Intune and Entra ID, improving efficiency.",
+      "Automated workflows with Microsoft Power Automate, reducing manual tasks and boosting productivity.",
+      "Monitored system performance and ensured compliance using Microsoft Purview and Defender, fostering a secure IT environment."
+    ],
+  },
+  
+  {
+    role: "Training",
+    organization: "Kumasi Hive",
+    period: "June 2022 – July 2022",
+    details: [
+      "Gained hands-on training on sensor and cloud integration with Automated Systems which aided me in designing an IoT-based Irrigation System that uses Weather Data from an API for Irrigation Scheduling.",
+    ],
+  },
+];
+
+const Experience = () => {
   return (
-    <section id="hireme" className="py-10 px-3 text-white">
-      <div className="text-center">
-        <h3 className="text-4xl font-semibold">
-          Experience
-        </h3>
-        <p className="text-gray-400 mt-3 text-lg">My Experience</p>
-      </div>
-      <div className="bg-gray-700 relative px-8 rounded-2xl py-5 lg:max-w-4xl mx-auto min-h-[24rem] mt-24 flex gap-6 lg:flex-row flex-col-reverse items-center">
-        <div>
-          <h2 className="text-2xl font-semibold">
-            Do you want any work from me?
-          </h2>
-          <p className="lg:text-left text-justify max-w-lg text-sm mt-4 text-gray-200 leading-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dicta
-            soluta quos tempore eos accusamus cupiditate, amet in similique
-            sapiente obcaecati odio deleniti architecto corporis ratione.
-            Consequatur a quidem maiores!
-          </p>
-          <button className="btn-primary mt-10">Say Hello</button>
-        </div>
-        <img
-          src={hireMe}
-          alt=""
-          className="lg:h-[32rem] h-80 lg:absolute bottom-0 -right-3 object-cover"
-        />
+    <section id="experience" className="py-10 px-5 bg-black text-gray-400">
+      <h3 className="text-4xl font-semibold text-center text-white mb-8">
+        Experience
+      </h3>
+      <div className="space-y-6 max-w-4xl mx-auto">
+        {experiences.map((exp, index) => (
+          <div
+            key={index}
+            className="bg-gray-800 border border-cyan-600 p-6 rounded-lg"
+          >
+            <h4 className="text-cyan-600 text-xl font-bold">{exp.role}</h4>
+            <p className="text-gray-400 italic">{exp.organization}</p>
+            <p className="text-gray-400 mb-4">{exp.period}</p>
+            <ul className="list-disc list-inside space-y-2">
+              {exp.details.map((detail, i) => (
+                <li key={i}>{detail}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   );
 };
 
-export default Hireme;
+export default Experience;
