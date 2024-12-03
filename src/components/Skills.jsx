@@ -3,23 +3,23 @@ import React from "react";
 const Skills = () => {
   const skills = [
     {
-      logo: "logo-html5",
-      level: "Advance",
+      logo: "logo-database",
+      level: "Mongo DB",
       count: 86,
     },
     {
-      logo: "logo-css3",
-      level: "Expect",
+      logo: "logo-express js",
+      level: "CSS",
       count: 90,
     },
     {
-      logo: "logo-nodejs",
-      level: "Beginner",
+      logo: "logo-git",
+      level: "Javascript",
       count: 40,
     },
     {
-      logo: "logo-react",
-      level: "Intermediate",
+      logo: "logo-nodejs",
+      level: "Node Js",
       count: 80,
     },
   ];

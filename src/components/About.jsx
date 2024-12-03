@@ -1,43 +1,42 @@
 import React from "react";
-import aboutImg from "../assets/images/about.png";
+import aboutImg from "../assets/images/me.png";
+
 const About = () => {
   const info = [
-    { text: "Years experience", count: "04" },
-    { text: "Completed Projects", count: "24" },
-    { text: "Companies Work", count: "06" },
+    { text: "Years experience", count: "01" },
+    { text: "Completed Projects", count: "5" },
+    // { text: "Companies Work", count: "06" },
   ];
+
   return (
     <section id="about" className="py-10 text-white">
       <div className="text-center mt-8">
         <h3 className="text-4xl font-semibold">
           About <span className="text-cyan-600">Me</span>
         </h3>
-        <p className="text-gray-400 my-3 text-lg">My introduction</p>
         <div className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto">
           <div className="p-2">
             <div className="text-gray-300 my-3">
               <p className="text-justify leading-7 w-11/12 mx-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
-                eos, quam vel quisquam, explicabo sit labore dignissimos optio
-                ratione quibusdam doloribus pariatur consequuntur sint.
-                Reprehenderit cupiditate possimus facere quasi voluptatem?
+                I'm Felicity Semetey, a junior backend developer with a degree in Computer Science from the University of Mines and Technology(UMaT), Tarkwa. I am passionate about exploring new technologies and improving my proficiency in software engineering, especially on the backend (server-side). While still in the early stages of my career, I am committed to continuous learning and growth. I’m excited about the opportunity to collaborate with others, contribute to impactful projects, and further refine my abilities as a backend developer.
               </p>
-              <div className="flex mt-10 items-center gap-7">
-                {info.map((content) => (
-                  <div key={content.text}>
-                    <h3 className="md:text-4xl text-2xl font-semibold text-white">
-                      {content.count}
-                      <span className="text-cyan-600">+</span>{" "}
-                    </h3>
-                    <span className="md:text-base text-xs">{content.text}</span>
-                  </div>
-                ))}
+              <div className="mt-10">
+                <div className="flex justify-start gap-7 ml-6">
+                  {info.map((content) => (
+                    <div key={content.text}>
+                      <h3 className="md:text-4xl text-2xl font-semibold text-white">
+                        {content.count}
+                        <span className="text-cyan-600">+</span>{" "}
+                      </h3>
+                      <span className="md:text-base text-xs">{content.text}</span>
+                    </div>
+                  ))}
+                </div>
+                <br />
+                <a href="./src/assets/Code_a_program.pdf" download>
+                  <button className="btn-primary ml-30">Download CV</button>
+                </a>
               </div>
-              <br />
-              <br />
-              <a href="./src/assets/Code_a_program.pdf" download>
-                <button className="btn-primary">Download CV</button>
-              </a>
             </div>
           </div>
           <div className="flex-1 md:mt-0 mt-6 flex justify-center items-center">
@@ -45,7 +44,7 @@ const About = () => {
               <img
                 src={aboutImg}
                 alt=""
-                className="w-full object-cover bg-cyan-600 rounded-xl"
+                className="w-full object-cover bg-gray-500 rounded-xl"
               />
             </div>
           </div>
