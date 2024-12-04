@@ -14,8 +14,8 @@ const Project = () => {
     {
       img: project1,
       name: "FelJoy, a mental health App",
-      // github_link: "https://github.com/Sridhar-C-25",
-      // live_link: "https://myreactflix.netlify.app",
+      github_link: "https://documenter.getpostman.com/view/38771172/2sAY4ydLUf",
+      live_link: "https://feljoy.netlify.app/",
     },
     {
       img: project2,
@@ -80,7 +80,7 @@ const Project = () => {
                       target="_blank"
                       className="text-cyan-600 bg-gray-800 px-2 py-1 inline-block"
                     >
-                      Github
+                      API Documentaion
                     </a>
                     <a
                       href={project_info.live_link}
