@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
-  const [sticky, setSticky] = useState(false);
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);  // State to track scroll position
   const menuLinks = [
     { name: "Home", link: "#home" },
     { name: "About", link: "#about" },
@@ -11,21 +11,26 @@ const Navbar = () => {
     { name: "Contact", link: "#contact" },
   ];
 
+  // Effect to listen to the scroll event
   useEffect(() => {
     const handleScroll = () => {
-      setSticky(window.scrollY > 0);
+      if (window.scrollY > 10) {
+        setScrolled(true);  // Add shadow when scrolled
+      } else {
+        setScrolled(false);  // Remove shadow when at the top
+      }
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    window.addEventListener("scroll", handleScroll);  // Listen for scroll events
+
+    // Clean up the event listener
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <nav
-      className={`fixed w-full left-0 top-0 z-[999] transition-all ease ${
-        sticky ? "bg-white text-gray-900 shadow-md" : "bg-transparent text-white"
+      className={`fixed w-full left-0 top-0 z-[999] transition-all ease bg-[#111827] text-white ${
+        scrolled ? "shadow-lg" : ""  // Apply shadow when scrolled
       }`}
     >
       <div className="flex items-center justify-around px-7 py-4">
@@ -36,21 +41,19 @@ const Navbar = () => {
         </div>
         <div className="hidden md:block">
           <ul className="flex items-center gap-6 text-lg">
-            {menuLinks?.map((menu, i) => (
+            {menuLinks.map((menu, i) => (
               <li
                 key={i}
-                className="px-4 py-2 rounded-[30px] transition-all ease hover:bg-blue-500 hover:text-white"
+                className="px-4 py-2 rounded-[30px] transition-all ease hover:bg-cyan-600  hover:text-white"
               >
-                <a href={menu?.link}>{menu?.name}</a>
+                <a href={menu.link}>{menu.name}</a>
               </li>
             ))}
           </ul>
         </div>
         <div
           onClick={() => setOpen(!open)}
-          className={`z-[999] text-3xl md:hidden cursor-pointer ${
-            sticky ? "text-gray-900" : "text-white"
-          }`}
+          className="z-[999] text-3xl md:hidden cursor-pointer text-white"
         >
           <ion-icon name="menu"></ion-icon>
         </div>
@@ -60,13 +63,13 @@ const Navbar = () => {
           }`}
         >
           <ul className="flex flex-col justify-center h-full gap-10 py-2 text-lg">
-            {menuLinks?.map((menu, i) => (
+            {menuLinks.map((menu, i) => (
               <li
                 key={i}
-                className="px-4 py-2 rounded-[30px] transition-all ease hover:bg-blue-500 hover:text-white"
+                className="px-4 py-2 rounded-[30px] transition-all ease hover:bg-cyan-600  hover:text-white"
                 onClick={() => setOpen(false)}
               >
-                <a href={menu?.link}>{menu?.name}</a>
+                <a href={menu.link}>{menu.name}</a>
               </li>
             ))}
           </ul>

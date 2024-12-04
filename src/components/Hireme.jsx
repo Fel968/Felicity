@@ -24,7 +24,6 @@ const experiences = [
       "Monitored system performance and ensured compliance using Microsoft Purview and Defender, fostering a secure IT environment."
     ],
   },
-  
   {
     role: "Training",
     organization: "Kumasi Hive",
@@ -37,7 +36,7 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-10 px-5 bg-black text-gray-400">
+    <section id="experience" className="py-10 px-5 bg-[#111827] text-gray-400">
       <h3 className="text-4xl font-semibold text-center text-white mb-8">
         Experience
       </h3>

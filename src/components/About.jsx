@@ -34,8 +34,8 @@ const About = () => {
                 </div>
                 <br />
                 <a href="./src/assets/Felicity Semetey-RESUME.pdf" download>
-                  <button className="btn-primary ml-30">Download CV</button>
-                </a>
+                <button className="btn-primary" style={{ marginLeft: "20px" }}> Download CV         
+                   </button> </a>
               </div>
             </div>
           </div>
