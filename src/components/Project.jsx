@@ -28,20 +28,20 @@ const Project = () => {
       name: "eBook app",
       // github_link: "https://github.com/Sridhar-C-25/highking",
       // live_link: "https://highking01.netlify.app",
-    },
-    {
-      img: project4,
-      name: "React Nav",
-      // github_link:
-      //   "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
-      // live_link: "https://reacttailwindnavbar.netlify.app",
-    },
-    {
-      img: project5,
-      name: "Vue Country",
-      // github_link: "https://github.com/Sridhar-C-25",
-      // live_link: "https://vuecountry05.netlify.app",
-    },
+    }
+    // {
+    //   img: project4,
+    //   name: "React Nav",
+    //   // github_link:
+    //   //   "https://github.com/Sridhar-C-25/reacttailwindnavbar-with-dropdown",
+    //   // live_link: "https://reacttailwindnavbar.netlify.app",
+    // },
+    // {
+    //   img: project5,
+    //   name: "Vue Country",
+    //   // github_link: "https://github.com/Sridhar-C-25",
+    //   // live_link: "https://vuecountry05.netlify.app",
+    // },
   ];
   return (
     <section id="projects" className="py-10 text-white">
