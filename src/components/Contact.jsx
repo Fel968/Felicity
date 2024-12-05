@@ -83,7 +83,7 @@ const Contact = () => {
         {feedback && (
           <p
             className={`mt-4 text-lg ${
-              feedback.includes("successfully") ? "text-green-500" : "text-red-500"
+              feedback.includes("successfully") ? "text-cyan-600" : "text-red-500"
             }`}
           >
             {feedback}
