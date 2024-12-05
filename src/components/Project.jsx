@@ -47,7 +47,6 @@ const Project = () => {
     <section id="projects" className="py-10 text-white">
       <div className="text-center">
         <h3 className="text-4xl font-semibold">Projects</h3>
-        <p className="text-gray-400 mt-3 text-lg">Featured Projects</p>
       </div>
       <br />
       <div className="flex flex-col max-w-6xl gap-6 px-5 mx-auto items-center">

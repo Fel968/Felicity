@@ -10,16 +10,30 @@ import Navbar from "./components/Navbar";
 // import Bot from "./components/Bot";
 
 const App = () => {
+  const componentStyle = { marginBottom: "4rem" }; // Consistent bottom margin
+
   return (
     <div>
       <Navbar />
-      <div style={{ marginTop: '4rem' }}>
-        <Hero />
-        <About />
-        <Skills />
-        <Experience />
-        <Project />
-        <Contact />
+      <div style={{ marginTop: "4rem" }}>
+        <div>
+          <Hero />
+        </div>
+        <div style={componentStyle}>
+          <About />
+        </div>
+        <div style={componentStyle}>
+          <Skills />
+        </div>
+        <div style={componentStyle}>
+          <Experience />
+        </div>
+        <div style={componentStyle}>
+          <Project />
+        </div>
+        <div style={componentStyle}>
+          <Contact />
+        </div>
         <Footer />
       </div>
     </div>
@@ -27,4 +41,3 @@ const App = () => {
 };
 
 export default App;
-
