@@ -21,7 +21,7 @@ const experiences = [
       "Implemented industry-standard security policies to enhance compliance and risk management.",
       "Streamlined device and user management using Microsoft Intune and Entra ID, improving efficiency.",
       "Automated workflows with Microsoft Power Automate, reducing manual tasks and boosting productivity.",
-      "Monitored system performance and ensured compliance using Microsoft Purview and Defender, fostering a secure IT environment."
+      "Monitored system performance and ensured compliance using Microsoft Purview and Defender, fostering a secure IT environment.",
     ],
   },
   {
@@ -36,19 +36,19 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-10 px-5 bg-[#111827] text-gray-400">
+    <section id="experience" className="py-10 px-5 bg-[#111827] text-gray-300">
       <h3 className="text-4xl font-semibold text-center text-white mb-8">
         Experience
       </h3>
-      <div className="space-y-6 max-w-4xl mx-auto">
+      <div className="w-[75%] mx-auto space-y-6">
         {experiences.map((exp, index) => (
           <div
             key={index}
-            className="bg-gray-800 border border-cyan-600 p-6 rounded-lg"
+            className="bg-gray-900 border border-cyan-600 p-6 rounded-lg"
           >
             <h4 className="text-cyan-600 text-xl font-bold">{exp.role}</h4>
-            <p className="text-gray-400 italic">{exp.organization}</p>
-            <p className="text-gray-400 mb-4">{exp.period}</p>
+            <p className="text-gray-300 italic">{exp.organization}</p>
+            <p className="text-gray-300 mb-4">{exp.period}</p>
             <ul className="list-disc list-inside space-y-2">
               {exp.details.map((detail, i) => (
                 <li key={i}>{detail}</li>

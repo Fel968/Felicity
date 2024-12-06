@@ -1,53 +1,38 @@
 import React from "react";
+import { FaNodeJs, FaReact, FaHtml5, FaCss3Alt, FaJsSquare, FaGitAlt, FaWordpress } from "react-icons/fa";
+import { SiMongodb, SiExpress } from "react-icons/si";
 
 const Skills = () => {
   const skills = [
-    {
-      logo: "logo-nodejs",
-      level: "Mongo DB",
-      count: 86,
-    },
-    {
-      logo: "logo-nodejs",
-      level: "CSS",
-      count: 90,
-    },
-    {
-      logo: "logo-nodejs",
-      level: "Javascript",
-      count: 40,
-    },
-    {
-      logo: "logo-nodejs",
-      level: "Node Js",
-      count: 80,
-    },
+    { icon: <SiMongodb />, name: "MongoDB", color: "text-white" },
+    { icon: <SiExpress />, name: "Express.js", color: "bg-white text-black" },
+    { icon: <FaNodeJs />, name: "Node.js", color: "text-white" },
+    { icon: <FaGitAlt />, name: "Git", color: "bg-gray-900 text-white" },
+    { icon: <FaReact />, name: "React", color: "text-white" },
+    { icon: <FaHtml5 />, name: "HTML", color: "bg-gray-900 text-white" },
+    { icon: <FaCss3Alt />, name: "CSS", color: "text-white" },
+    { icon: <FaJsSquare />, name: "JavaScript", color: "text-white" },
+    { icon: <FaWordpress />, name: "WordPress", color: "text-white" },  // Added WordPress icon
   ];
+
   return (
-    <section id="skills" className="py-10 bg-gray-900 relative">
+    <section id="skills" className="py-10 bg-gray-900">
       <div className="mt-8 text-gray-100 text-center">
-        <h3 className="text-4xl font-semibold">
-           Skills
-        </h3>
-        <div className="flex items-center justify-center mt-12 gap-10 flex-wrap">
-          {skills?.map((skill, i) => (
-            <div
-              key={i}
-              className="border-2 group border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl"
-            >
+        <h3 className="text-4xl font-semibold">Skills</h3>
+        <div className="mt-12 flex justify-center">
+          <div className="grid grid-cols-3 gap-8 p-1 rounded-lg w-[70%]">
+            {skills.map((skill, i) => (
               <div
-                style={{
-                  background: `conic-gradient(rgb(8,145,170) ${skill.count}%,#ddd ${skill.count}%)`,
-                }}
-                className="w-32 h-32 flex items-center justify-center rounded-full"
+                key={i}
+                className="flex flex-col items-center bg-gray-900 p-6 rounded-lg shadow-md border-2 border-cyan-600 transition-all transform hover:scale-105"
               >
-                <div className="text-6xl w-28 h-28 bg-gray-900 rounded-full flex items-center justify-center group-hover:text-cyan-600">
-                  <ion-icon name={skill.logo}></ion-icon>
+                <div className={`w-16 h-16 rounded-full flex items-center justify-center ${skill.color} text-6xl`}>
+                  {skill.icon}
                 </div>
+                <p className="text-lg font-medium mt-4 text-white">{skill.name}</p>
               </div>
-              <p className="text-xl mt-3">{skill.level}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
