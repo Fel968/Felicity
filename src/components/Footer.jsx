@@ -11,13 +11,13 @@ const Footer = () => {
           {/* Contact Info - Centered */}
           <div className="text-sm leading-6 space-y-2 text-center">
             <p className="text-lg font-semibold">Contact Me</p>
-            <p>Email: felicitysemetey628@gmail.com</p>
+            <p>felicitysemetey628@gmail.com</p>
           </div>
 
           {/* Social Media Links - Icons in a row */}
           <div className="flex space-x-8">
             <a
-              href="https://www.facebook.com/felicitysem"
+              href="https://www.facebook.com/profile.php?id=61557559238252&mibextid=ZbWKwL"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xl hover:text-white"
@@ -25,7 +25,7 @@ const Footer = () => {
               <FaFacebook />
             </a>
             <a
-              href="https://www.linkedin.com/in/felicitysem/"
+              href="https://www.linkedin.com/in/felicity-semetey?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xl hover:text-white"
@@ -33,7 +33,7 @@ const Footer = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://github.com/felicitysem"
+              href="https://github.com/Fel968"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xl hover:text-white"
