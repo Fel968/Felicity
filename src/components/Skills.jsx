@@ -29,7 +29,7 @@ const Skills = () => {
                 <div className={`w-16 h-16 rounded-full flex items-center justify-center ${skill.color} text-6xl`}>
                   {skill.icon}
                 </div>
-                <p className="text-lg font-medium mt-4 text-white">{skill.name}</p>
+                <p className="text-lg font-medium mt-4 text-gray-300">{skill.name}</p>
               </div>
             ))}
           </div>
