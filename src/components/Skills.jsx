@@ -21,14 +21,14 @@ const Skills = () => {
         <h3 className="text-4xl font-semibold">Skills</h3>
         <div className="mt-12 flex justify-center">
           {/* Responsive Grid Layout */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4 w-full px-4 md:w-[70%] lg:w-[60%]">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 gap-4 w-full px-4 md:w-[70%] lg:w-[60%]">
             {skills.map((skill, i) => (
               <div
                 key={i}
-                className="flex items-center bg-gray-800 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105"
+                className="flex flex-col items-center bg-gray-800 p-4 rounded-lg shadow-md transition-transform transform hover:scale-105"
               >
                 {/* Icon */}
-                <div className={`text-4xl mr-4 ${skill.color}`}>{skill.icon}</div>
+                <div className={`text-4xl mb-2 ${skill.color}`}>{skill.icon}</div>
                 {/* Skill Name */}
                 <p className="text-lg font-medium text-gray-300">{skill.name}</p>
               </div>

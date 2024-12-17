@@ -6,11 +6,10 @@ const experiences = [
     organization: "MEST",
     period: "September 2024 – November 2024",
     details: [
-      "Acquired hands-on experience with modern web development technologies, including HTML, CSS, JavaScript, React, and Node.js.",
-      "Designed and implemented projects demonstrating core concepts in frontend development, backend development, and RESTful APIs.",
-      "Collaborated with team members to build responsive and functional web applications.",
-      "Strengthened skills in creating responsive web designs and implementing user-focused features.",
-      "Completed a capstone project showcasing understanding of the full stack development process.",
+      "Hands on experience with HTML, CSS, JavaScript, React, and Node.js.",
+      "Built projects with frontend, backend, and REST APIs.",
+      "Collaborated on responsive web applications.",
+      "Improved user-focused design and full-stack skills.",
     ],
   },
   {
@@ -18,10 +17,10 @@ const experiences = [
     organization: "Molaprise Technology Consult",
     period: "November 2023 – August 2024",
     details: [
-      "Implemented industry-standard security policies to enhance compliance and risk management.",
-      "Streamlined device and user management using Microsoft Intune and Entra ID, improving efficiency.",
-      "Automated workflows with Microsoft Power Automate, reducing manual tasks and boosting productivity.",
-      "Monitored system performance and ensured compliance using Microsoft Purview and Defender, fostering a secure IT environment.",
+      "Enhanced compliance with security policies.",
+      "Streamlined device management using Intune and Entra ID.",
+      "Automated tasks with Power Automate.",
+      "Monitored systems with Purview and Defender.",
     ],
   },
   {
@@ -29,7 +28,7 @@ const experiences = [
     organization: "Kumasi Hive",
     period: "June 2022 – July 2022",
     details: [
-      "Gained hands-on training on sensor and cloud integration with Automated Systems which aided me in designing an IoT-based Irrigation System that uses Weather Data from an API for Irrigation Scheduling.",
+      "Designed IoT-based irrigation using weather API.",
     ],
   },
 ];
@@ -40,7 +39,7 @@ const Experience = () => {
       <h3 className="text-4xl font-semibold text-center text-white mb-8">
         Experience
       </h3>
-      <div className="w-[75%] mx-auto space-y-6">
+      <div className="w-full md:w-[75%] mx-auto space-y-6">
         {experiences.map((exp, index) => (
           <div
             key={index}

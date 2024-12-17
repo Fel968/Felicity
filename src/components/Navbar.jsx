@@ -66,7 +66,7 @@ const Navbar = () => {
           }`}
         >
           <ul
-            className={`flex flex-col justify-center h-50 gap-10 py-2 text-lg ${
+            className={`flex flex-col justify-center h-full gap-10 py-2 text-lg ${
               open ? "text-black" : "text-black"
             }`}
           >

@@ -13,7 +13,7 @@ const Hero = () => {
           <span>Felicity Semetey</span>
         </h1>
         <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-white">
-          A Backend Developer
+          A Web Developer
         </h4>
 
         {/* Contact Me button with hover effect */}

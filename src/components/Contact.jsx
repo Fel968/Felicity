@@ -49,36 +49,36 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-10 px-3 text-white">
+    <section id="contact" className="py-10 px-3 text-white w-full">
       <div className="text-center mt-8">
         <h3 className="text-4xl font-semibold">
           Contact <span className="text-cyan-600">Me</span>
         </h3>
         <div
-          className="relative mt-8 flex md:flex-row flex-col gap-6 max-w-2xl rounded-lg mx-auto"
+          className="relative mt-8 flex md:flex-row flex-col gap-6 w-full max-w-full rounded-lg mx-auto"
         >
           {/* Contact Form */}
           <form
             id="contact-form"
-            className="flex flex-col flex-1 gap-5 mx-auto"
+            className="flex flex-col flex-1 gap-5 mx-auto w-full md:w-1/2 md:mx-[20%]" // 20% margin on the left and right for medium screens and up
           >
             <input
               type="text"
               name="from_name"
               placeholder="Your Name"
-              className="p-2 rounded bg-white text-black"
+              className="p-2 rounded bg-white text-black w-full shadow-md focus:outline-none focus:ring-2 focus:ring-cyan-600" // Added box shadow and focus styles
             />
             <input
               type="email"
               name="from_email"
               placeholder="Your Email Address"
-              className="p-2 rounded bg-white text-black"
+              className="p-2 rounded bg-white text-black w-full shadow-md focus:outline-none focus:ring-2 focus:ring-cyan-600" // Added box shadow and focus styles
             />
             <textarea
               name="message"
               placeholder="Your Message"
               rows={5}
-              className="p-2 rounded bg-white text-black"
+              className="p-2 rounded bg-white text-black w-full shadow-md focus:outline-none focus:ring-2 focus:ring-cyan-600" // Added box shadow and focus styles
             ></textarea>
             <div className="flex justify-center mt-4">
               <button
