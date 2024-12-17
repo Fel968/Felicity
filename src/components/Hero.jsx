@@ -7,7 +7,7 @@ const Hero = () => {
       className="min-h-screen flex py-10 md:flex-row flex-col items-center justify-center"
     >
       {/* Content Container */}
-      <div className="flex-1 text-center">
+      <div className="flex-1 text-center flex flex-col justify-center items-center h-full">
         <h1 className="md:text-5xl text-2xl md:leading-normal leading-10 text-white font-bold">
           <span className="text-cyan-600 md:text-6xl text-5xl">Hi,</span> I'm{" "}
           <span>Felicity Semetey</span>
@@ -25,7 +25,7 @@ const Hero = () => {
               contactSection.scrollIntoView({ behavior: "smooth" });
             }}
           >
-           Contact me
+            Contact me
           </button>
         </div>
       </div>

@@ -19,7 +19,7 @@ const App = () => {
         <div>
           <Hero />
         </div>
-        <div style={componentStyle}>
+        <div style={{ marginTop: "3rem" }}>
           <About />
         </div>
         <div style={componentStyle}>
