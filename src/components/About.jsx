@@ -33,7 +33,7 @@ const About = () => {
           {/* Count Section */}
           <div className="flex justify-center gap-7 mb-6">
             {info.map((content) => (
-              <div key={content.text} className="text-left">
+              <div key={content.text} className="text-center">
                 <h3 className="text-4xl font-semibold text-white">
                   {content.count}
                   <span className="text-cyan-600">+</span>
