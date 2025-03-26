@@ -18,7 +18,7 @@ const Project = () => {
     {
       img: project2,
       name: "AAENICS Store",
-      live_link: "https://aaenics.com/",
+      live_link: "https://store.aaenics.com/",
     },
     {
       img: project3,

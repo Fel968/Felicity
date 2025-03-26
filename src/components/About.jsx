@@ -1,5 +1,6 @@
 import React from "react";
-import aboutImg from "../assets/images/me.png";
+// import aboutImg from "../assets/images/me.png";
+import "./about.css"
 
 const About = () => {
   const info = [
@@ -19,19 +20,19 @@ const About = () => {
         </div> */}
 
         {/* Content Container */}
-        <div className="flex-1 text-left text-center">
+        <div className="about">
           {/* Title */}
           <h3 className="text-4xl font-semibold mb-6">
             About <span className="text-cyan-600">Me</span>
           </h3>
 
           {/* Introductory Text */}
-          <p className=" text-justify leading-7 text-gray-300 mb-8 w-full mx-auto ">
+          <p className="about-text text-gray-300">
             I'm Felicity Semetey, a web developer with a degree in Computer Science from the University of Mines and Technology (UMaT), Tarkwa. I am passionate about exploring new technologies and improving my proficiency in software engineering, especially on the backend (server-side). While still in the early stages of my career, I am committed to continuous learning and growth. I’m excited about the opportunity to collaborate with others, contribute to impactful projects, and further refine my abilities as a web developer.
           </p>
 
           {/* Count Section */}
-          <div className="flex justify-center gap-7 mb-6">
+          <div className="count">
             {info.map((content) => (
               <div key={content.text} className="text-center">
                 <h3 className="text-4xl font-semibold text-white">
@@ -46,7 +47,7 @@ const About = () => {
           {/* Download Button */}
           <div className="flex justify-center">
             <a href="./src/assets/Felicity Semetey-RESUME.pdf" download>
-              <button className="btn-primary">Download CV</button>
+              <button className="button btn-primary">Download CV</button>
             </a>
           </div>
         </div>

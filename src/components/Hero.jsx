@@ -1,4 +1,5 @@
 import React from "react";
+import "./hero.css"
 
 const Hero = () => {
   return (
@@ -8,7 +9,7 @@ const Hero = () => {
     >
       {/* Content Container */}
       <div className="flex-1 text-center flex flex-col justify-center items-center h-full">
-        <h1 className="md:text-6xl text-2xl md:leading-normal leading-10 text-white font-bold">
+        <h1 className="intro md:text-6xl text-3xl md:leading-normal leading-10 text-white font-bold">
           <span className="text-cyan-600">Hi,</span> I'm{" "}
           <span>Felicity Semetey</span>
         </h1>
