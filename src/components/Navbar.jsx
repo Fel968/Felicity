@@ -12,6 +12,7 @@ const Navbar = () => {
     { name: "Projects", link: "#projects" },
     { name: "Contact", link: "#contact" },
   ];
+  
 
   useEffect(() => {
     const handleScroll = () => {
